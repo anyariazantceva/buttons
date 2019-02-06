@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <title>Document</title>
+    <style>
+        *, *::before, *::after {
+            box-sizing: border-box;
+        }
+
+        html {
+            font-size: 62.5%;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            color: #fff;
+        }
+
+        .btnContainer {
+            max-width: 50rem;
+            margin: 0 auto;
+            background-color: #ededed;
+            padding: 2rem 4rem;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+           
+        }
+
+        .btn {
+            vertical-align: baseline;
+            font-family: inherit;
+            font-size: 1.6rem;
+            margin-bottom: 1rem;
+            background: transparent;
+            border: 0.1rem solid transparent;
+            color: inherit;
+            text-decoration: none;
+            outline: none;
+            padding: 0.8rem 4rem;
+            user-select: none;
+            cursor: pointer;
+            border-radius: 1rem;
+            transition: all 0.3s;
+            
+        }
+
+        .btn:hover {
+            box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+            transform: scale(1.05);
+        }
+
+        .btn:focus {
+            box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+        }
+
+        .btn:active {
+            transform: translateY(0.3rem);
+        }
+
+        .btn--first {
+            background: linear-gradient(to bottom, #716d6d, black);
+            border-color: #040404;
+        }
+
+        .btn--second {
+            background: #777777;
+            border-color: #444444;
+        }
+
+        .btn--third {
+            background: #fff;
+            border-color: #cecece;
+            color: #444444;
+        }
+
+        .btn--four {
+            background: #f68a01;
+            border-color: #c47104;
+        }
+
+        .btn--five {
+            background: #008bc2;
+            border-color: #00587a;
+        }
+
+        .btn--six {
+            background: #649100;
+            border-color: #4d7001;
+        }
+
+        .btn--seven {
+            background: #bd2014;
+            border-color: #86160d;
+        }
+
+        .btn--eight {
+            background: #cd505b;
+            border-color: #993d44;
+        }
+
+        .btn--nine {
+            background: #f58dbd;
+            border-color: #b8698e;
+        }
+
+        .btn--sm {
+            padding: 0.4rem 1rem;
+            font-size: 1rem;
+        }
+
+        .btn--lg {
+			padding: 1.2rem 2.5rem;
+			font-size: 1.8rem;
+		}
+
+    </style>
+</head>
+<body>
+    <div class="btnContainer">
+        <button class="btn btn--first">Button</button>
+        <button class="btn btn--second">Button</button>
+        <button class="btn btn--third">Button</button>
+	    <span class="btn btn--four">Button</span>
+	    <input class="btn btn--five" value="Button" type="button">
+	    <a href="#" class="btn btn--six">Button</a>
+        <a href="#" class="btn btn--seven">Button</a>
+        <a href="#" class="btn btn--eight">Button</a>
+        <a href="#" class="btn btn--nine">Button</a>
+    </div>
+</body>
+</html>
